@@ -52,15 +52,11 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: Colors.blue,
         ),
         body: Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 16.0,
-          ),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
-                SizedBox(
-                  height: 24.0,
-                ),
+                SizedBox(height: 24.0),
                 // TextField(
                 //   controller: serverText,
                 //   decoration: InputDecoration(
@@ -68,9 +64,7 @@ class _MyAppState extends State<MyApp> {
                 //       labelText: "Server URL",
                 //       hintText: "Hint: Leave empty for meet.jitsi.si"),
                 // ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 TextField(
                   controller: roomText,
                   decoration: InputDecoration(
@@ -88,9 +82,7 @@ class _MyAppState extends State<MyApp> {
                 //     labelText: "Subject",
                 //   ),
                 // ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 TextField(
                   controller: nameText,
                   decoration: InputDecoration(
