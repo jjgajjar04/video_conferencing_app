@@ -57,13 +57,7 @@ class _MyAppState extends State<MyApp> {
             child: Column(
               children: <Widget>[
                 SizedBox(height: 24.0),
-                // TextField(
-                //   controller: serverText,
-                //   decoration: InputDecoration(
-                //       border: OutlineInputBorder(),
-                //       labelText: "Server URL",
-                //       hintText: "Hint: Leave empty for meet.jitsi.si"),
-                // ),
+               
                 SizedBox(height: 16.0),
                 TextField(
                   controller: roomText,
@@ -72,16 +66,7 @@ class _MyAppState extends State<MyApp> {
                     labelText: "Room",
                   ),
                 ),
-                // SizedBox(
-                //   height: 16.0,
-                // ),
-                // TextField(
-                //   controller: subjectText,
-                //   decoration: InputDecoration(
-                //     border: OutlineInputBorder(),
-                //     labelText: "Subject",
-                //   ),
-                // ),
+              
                 SizedBox(height: 16.0),
                 TextField(
                   controller: nameText,
@@ -103,9 +88,7 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(
                   height: 16.0,
                 ),
-                // SizedBox(
-                //   height: 16.0,
-                // ),
+               
                 CheckboxListTile(
                   title: Text("Audio Only"),
                   value: isAudioOnly,
@@ -179,14 +162,12 @@ class _MyAppState extends State<MyApp> {
         serverText.text?.trim()?.isEmpty ?? "" ? null : serverText.text;
 
     try {
-      // Enable or disable any feature flag here
-      // If feature flag are not provided, default values will be used
-      // Full list of feature flags (and defaults) available in the README
+   
       Map<FeatureFlagEnum, bool> featureFlags = {
         FeatureFlagEnum.WELCOME_PAGE_ENABLED: false,
       };
 
-      // Here is an example, disabling features for each platform
+ 
       if (Platform.isAndroid) {
         // Disable ConnectionService usage on Android to avoid issues (see README)
         featureFlags[FeatureFlagEnum.CALL_INTEGRATION_ENABLED] = false;
