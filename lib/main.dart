@@ -46,27 +46,18 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('VidConf'),
-          centerTitle: true,
-          backgroundColor: Colors.blue,
-        ),
+        appBar: AppBar(title: const Text('VidConf'),centerTitle: true,backgroundColor: Colors.blue),
         body: Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
                 SizedBox(height: 24.0),
-               
                 SizedBox(height: 16.0),
                 TextField(
                   controller: roomText,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: "Room",
-                  ),
+                  decoration: InputDecoration(border: OutlineInputBorder(),labelText: "Room"),
                 ),
-              
                 SizedBox(height: 16.0),
                 TextField(
                   controller: nameText,
@@ -75,9 +66,7 @@ class _MyAppState extends State<MyApp> {
                     labelText: "Display Name",
                   ),
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 TextField(
                   controller: emailText,
                   decoration: InputDecoration(
@@ -85,26 +74,20 @@ class _MyAppState extends State<MyApp> {
                     labelText: "Email",
                   ),
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                
                 CheckboxListTile(
                   title: Text("Audio Only"),
                   value: isAudioOnly,
                   onChanged: _onAudioOnlyChanged,
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 CheckboxListTile(
                   title: Text("Audio Muted"),
                   value: isAudioMuted,
                   onChanged: _onAudioMutedChanged,
                 ),
-                SizedBox(
-                  height: 16.0,
-                ),
+                SizedBox(height: 16.0),
                 CheckboxListTile(
                   title: Text("Video Muted"),
                   value: isVideoMuted,
